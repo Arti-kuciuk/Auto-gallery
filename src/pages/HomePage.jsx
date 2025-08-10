@@ -14,7 +14,7 @@ import BMWM4Img from '../images/BMW-m4.png';
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen w-full bg-[#C7C5C5] grid place-items-center overflow-x-hidden px-12">
+    <div className="relative min-h-screen w-full bg-[#C7C5C5] grid place-items-center overflow-x-hidden px-4 md:px-12">
       {/* Линии в верхней части */}
       <div className="absolute top-[7vh] w-full z-10 px-8">
         <hr className="border-2 w-full mx-auto" />
