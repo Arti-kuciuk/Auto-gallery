@@ -2,6 +2,16 @@ import React from 'react';
 import CarCard from '../CarCard'; 
 import { Link } from 'react-router-dom';
 
+import RightCorner from '../assets/right-corner.svg';
+import LeftCorner from '../assets/left-corner.svg';
+
+import AudiQ8Img from '../images/Audi-q8.png';
+import Porsche911Img from '../images/Porsche-911.png';
+import AudiS7Img from '../images/Audi-s7.png';
+import AudiRS6Img from '../images/Audi-rs6.png';
+import PorscheTaycanImg from '../images/Porsche-taycan.png';
+import BMWM4Img from '../images/BMW-m4.png';
+
 export default function HomePage() {
   return (
     <div className="relative min-h-screen w-full bg-[#C7C5C5] grid place-items-center overflow-x-hidden px-12">
@@ -13,7 +23,7 @@ export default function HomePage() {
 
       {/* SVG в правом верхнем углу */}
       <img
-        src="src/assets/right-corner.svg"
+        src={RightCorner}
         alt="decorative curve"
         className="absolute top-0 right-0 w-[230px] md:w-[300px] lg:w-[400px] z-15 pointer-events-none select-none"
       />
@@ -45,32 +55,32 @@ export default function HomePage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-[10vh]">
         <CarCard
           title="Audi Q8"
-          image="src/images/Audi-q8.png"
+          image={AudiQ8Img}
           description="A powerful SUV with futuristic design and advanced technologies."
         />
         <CarCard
           title="Porsche 911"
-          image="src/images/Porsche-911.png"
+          image={Porsche911Img}
           description="An iconic blend of speed and style with a rear-engine layout."
         />
         <CarCard
           title="Audi S7"
-          image="src/images/Audi-s7.png"
+          image={AudiS7Img}
           description="A sleek liftback offering premium comfort and dynamic performance."
         />
         <CarCard
           title="Audi RS6"
-          image="src/images/Audi-rs6.png"
+          image={AudiRS6Img}
           description="A fast wagon combining luxury, space, and incredible power."
         />
         <CarCard
           title="Porsche Taycan"
-          image="src/images/Porsche-taycan.png"
+          image={PorscheTaycanImg}
           description="An electric sports car with Porsche DNA and thrilling acceleration."
         />
         <CarCard
           title="BMW M4"
-          image="src/images/BMW-m4.png"
+          image={BMWM4Img}
           description="A high-performance coupe with aggressive design and track capabilities."
         />
       </div>
@@ -90,7 +100,7 @@ export default function HomePage() {
       <hr className="border-2 w-5/6 mx-auto mb-[7vh]" />
 
       <img
-        src="src/assets/left-corner.svg"
+        src={LeftCorner}
         alt="decorative curve"
         className="absolute bottom-0 left-0 w-[250px] md:w-[270px] lg:w-[350px] z-15 pointer-events-none select-none"
       />
