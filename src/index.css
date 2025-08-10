@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Viaoda Libre', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #C7C5C5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-outline {
+  -webkit-text-stroke: 0.3px #101828;
+}
+
+.text-outline-small {
+  -webkit-text-stroke: 0.1px #101828;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 0.1px #ffffff;
+}
