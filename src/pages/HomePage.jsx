@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <div className="relative min-h-screen w-full bg-[#C7C5C5] grid place-items-center overflow-x-hidden px-4 md:px-12">
       {/* Линии в верхней части */}
-      <div className="absolute top-[7vh] w-full z-10 px-8">
+      <div className="hidden md:absolute top-[7vh] w-full z-10 px-8">
         <hr className="border-2 w-full mx-auto" />
         <hr className="border-2 w-5/6 mx-auto mt-[7vh]" />
       </div>
@@ -29,7 +29,7 @@ export default function HomePage() {
       />
 
       {/* Контент по центру */}
-      <div className="z-10 text-center space-y-12 w-full mt-[30vh]">
+      <div className="hidden md:inline-block z-10 text-center space-y-12 w-full mt-[30vh]">
         {/* Заголовок */}
         <h1 className="text-[25vw] md:text-[15vw] font-bold flex flex-col md:flex-row items-center justify-center">
           <span className="text-gray-900">Auto</span>
@@ -44,11 +44,33 @@ export default function HomePage() {
             The art of automotive elegance
           </p>
         </div>
+      </div>
 
-        <div className="inline-block md:hidden border-3 border-white rounded-[3vw] px-5 py-2">
-          <p className="text-[4vw] text-gray-600 font-semibold">
-            Automotive elegance
-          </p>
+      {/* Мобильная версия - 100% высоты экрана */}
+      <div className="md:hidden w-full h-screen flex flex-col items-center justify-center p-4 relative">
+        {/* Верхние линии */}
+        <div className="absolute top-[5vh] w-full z-10">
+          <hr className="border-2 border-white w-[90vw] mx-auto" />
+          <hr className="border-2 border-white w-[75vw] mx-auto mt-[5vh]" />
+          <hr className="border-2 border-white w-[60vw] mx-auto mt-[5vh]" />
+        </div>
+
+        {/* Центральный контейнер с текстом */}
+        <div className="z-10 flex items-center justify-center">
+          <div className="w-[50vw] h-[50vw] rounded-[calc(1vw+2vh)] border-4 border-white flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-gray-900 text-8xl mb-2 text-outline">Auto</div>
+              <br />
+              <div className="text-[#AE0D0D] text-7xl text-outline-red">Gallery</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Нижние линии */}
+        <div className="absolute bottom-[5vh] w-full z-10">
+          <hr className="border-2 border-white w-[60vw] mx-auto mb-[5vh]" />
+          <hr className="border-2 border-white w-[75vw] mx-auto mb-[5vh]" />
+          <hr className="border-2 border-white w-[90vw] mx-auto" />
         </div>
       </div>
 

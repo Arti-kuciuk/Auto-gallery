@@ -26,3 +26,7 @@
 .text-outline-white {
   -webkit-text-stroke: 0.1px #ffffff;
 }
+
+.text-outline-red {
+  -webkit-text-stroke: 0.2px #AE0D0D;
+}

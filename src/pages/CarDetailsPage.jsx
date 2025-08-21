@@ -28,8 +28,9 @@ export default function CarDetailsPage() {
 
       {/* Контент */}
       <div className="flex flex-col md:flex-row flex-1 w-full max-w-[1400px] px-4 md:px-8 gap-10 md:gap-8 items-center justify-center">
-        {/* Фото + Название */}
-        <div className="flex-1 h-auto md:h-[70vh] flex flex-col justify-between items-center">
+        
+        {/* Фото + Название в одной рамке на десктопе */}
+        <div className="flex-1 h-auto md:h-[70vh] flex flex-col justify-between items-center border-0 md:border-4 border-white rounded-[3vw] overflow-hidden">
           {/* Фото */}
           <div className="h-[40vh] md:h-[55vh] w-full flex items-center justify-center">
             <img
@@ -39,9 +40,12 @@ export default function CarDetailsPage() {
             />
           </div>
 
-          {/* Название (только на десктопе) */}
-          <div className="hidden md:block w-full text-center border-4 border-white rounded-[calc(1.5vw+1vh)] md:px-12 md:py-4">
-            <p className="text-[4vw] md:text-[3vw] text-gray-900 font-semibold text-outline-small">
+          {/* Линия разделитель (только десктоп) */}
+          <hr className="hidden md:block border-white border-2 w-full" />
+
+          {/* Название (десктоп) */}
+          <div className="hidden md:flex items-center justify-center w-full py-4">
+            <p className="text-[3vw] text-gray-900 font-semibold text-outline-small">
               {car.title}
             </p>
           </div>
@@ -49,13 +53,13 @@ export default function CarDetailsPage() {
 
         {/* Описание + Кнопка */}
         <div className="flex-1 bg-none rounded-[3vw] flex flex-col border-4 border-white h-auto md:h-[70vh]">
-          {/* Название только на мобильной версии */}
+          
+          {/* Название для мобильной версии */}
           <div className="md:hidden px-4 md:px-6 py-3 md:py-4">
             <h1 className="text-[7vw] text-gray-900 text-center text-outline-small leading-tight">
               {car.title}
             </h1>
           </div>
-
           <hr className="md:hidden border-white border-2 mt-2" />
 
           {/* Описание */}
