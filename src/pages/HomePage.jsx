@@ -57,11 +57,11 @@ export default function HomePage() {
 
         {/* Центральный контейнер с текстом */}
         <div className="z-10 flex items-center justify-center">
-          <div className="w-[50vw] h-[50vw] rounded-[calc(1vw+2vh)] border-4 border-white flex items-center justify-center">
+          <div className="w-[60vw] h-[65vw] rounded-[calc(1vw+2vh)] border-4 border-white flex items-center justify-center">
             <div className="text-center">
-              <div className="text-gray-900 text-8xl mb-2 text-outline">Auto</div>
-              <br />
-              <div className="text-[#AE0D0D] text-7xl text-outline-red">Gallery</div>
+              <div className="text-gray-900 text-[20vw] mb-2 text-outline">Auto</div>
+
+              <div className="text-[#AE0D0D] text-[15vw] text-outline-red">Gallery</div>
             </div>
           </div>
         </div>
